@@ -51,11 +51,7 @@ class Yacht {
     }
 
     boolean sameFace(int[] dices) {
-        int sum = 0;
-        for (int d: dices) {
-            sum += d;
-        }
-        return sum == 5*dices[0];
+        return sumDices(dices) == 5*dices[0];
     }
 
     int sumDices(int[] dices) {
